@@ -1,1 +1,1 @@
-# About Akola - ____
+# First website
