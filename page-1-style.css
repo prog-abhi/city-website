@@ -1,5 +1,11 @@
 html {
     overflow: scroll;
+    font-family: sans-serif;
+    --aero-blue: #daffedff;
+    --celeste: #9bf3f0ff;
+    --green-blue-crayola: #0582caff;
+    --blue-pigment: #473198ff;
+    --blue-violet-color-wheel: #4a0d67ff;;
 }
 
 body {
@@ -7,6 +13,7 @@ body {
     margin: auto;
     width: 50%;
     text-align: center;
+    background-color: var(--aero-blue);
 }
 
 header {
@@ -19,16 +26,27 @@ h1 {
     text-align: center;
 }
 
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
-    border-top: 1mm solid black;
-    border-bottom: 1mm solid black;
+    background-color: var(--green-blue-crayola);
+    border-top: 1mm solid var(--blue-violet-color-wheel);
+    border-bottom: 1mm solid var(--blue-violet-color-wheel);
     display: flex;
     justify-content: space-around;
+}
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: var(--aero-blue);
 }
 
 main {
     display: block;
     text-align: left;
+    background-color: white;
+    margin: 0%;
 }
 
 div.info-section {
@@ -44,14 +62,18 @@ div#info-section-subsection {
     box-sizing: border-box;
     justify-self: flex-start;
     height: auto;
-    width: 70%;
+    width: 80%;
+    margin: 5px 0;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1mm solid gray;
-    border-bottom: 1mm solid gray;
+    background-color: var(--green-blue-crayola);
+    border-top: 1mm solid var(--blue-violet-color-wheel);
+    border-bottom: 1mm solid var(--blue-violet-color-wheel);
+    color: var(--aero-blue);
+    margin: 10px 0;
 }
 
 #places-to-visit-container {
