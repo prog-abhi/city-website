@@ -1,0 +1,86 @@
+html {
+    overflow: scroll;
+}
+
+body {
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+header {
+    box-sizing: border-box;
+    height: 150px;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    border-top: 1mm solid black;
+    border-bottom: 1mm solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    display: block;
+    text-align: left;
+}
+
+div.info-section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+div#info-section-subsection {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1mm solid gray;
+    box-sizing: border-box;
+    justify-self: flex-start;
+    height: auto;
+    width: 70%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1mm solid gray;
+    border-bottom: 1mm solid gray;
+}
+
+#places-to-visit-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.places-to-visit-elements {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px 0;
+    border-top: 0.1mm solid red;
+    align-items: center;
+}
+
+.places-to-visit-img-element {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    margin: 35px auto;
+    box-sizing: border-box;
+}
+
+.form-elements {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 10px auto;
+}
