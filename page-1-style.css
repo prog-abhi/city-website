@@ -1,52 +1,85 @@
 html {
     overflow: scroll;
     font-family: sans-serif;
+    font-size: large;
     --aero-blue: #daffedff;
     --celeste: #9bf3f0ff;
     --green-blue-crayola: #0582caff;
     --blue-pigment: #473198ff;
-    --blue-violet-color-wheel: #4a0d67ff;;
+    --blue-violet-color-wheel: #4a0d67ff;
+
 }
 
 body {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 1280px;
     text-align: center;
-    background-color: var(--aero-blue);
+    background-color: whitesmoke;
 }
 
 header {
     box-sizing: border-box;
-    height: 150px;
+    height: 200px;;
     padding-top: 30px;
+    border-radius: 10px;
+    background-origin: border-box;
+    background-position: center;
+    background-blend-mode: darken;
+    image-rendering: crisp-edges;
+}
+
+header.page-1 {
+    background-image: url('./images/city-heading-page-1.jpg');
+}
+
+header.page-2 {
+    background-image: url("./images/city-heading-page-2.jpg");
+}
+
+header.page-3 {
+    background-image: url("./images/city-heading-page-3.jpg");
+}
+
+header.page-4 {
+    background-image: url("./images/city-heading-page-4.jpg");
 }
 
 h1 {
     text-align: center;
+    color: white;
+    font-size: 60px;
 }
 
 h1, h2, h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
-    background-color: var(--green-blue-crayola);
-    border-top: 1mm solid var(--blue-violet-color-wheel);
-    border-bottom: 1mm solid var(--blue-violet-color-wheel);
     display: flex;
     justify-content: space-around;
+    padding: 5px;
+    margin-top: 5px;
 }
+
+.style-1 {
+    background-color: red;
+    border: 0.1mm solid black;
+    box-shadow: 10px 5px 5px lightpink;
+    border-radius: 5mm;
+}
+
 a, a:hover, a:focus, a:active{
     text-decoration: none;
-    color: var(--aero-blue);
+    color: white;
 }
 
 main {
     display: block;
     text-align: left;
-    background-color: white;
-    margin: 0%;
+    background-color: rgba(80  , 80, 80, 0.1);
+    margin: auto 10px;
+    padding: 10px;
 }
 
 div.info-section {
@@ -69,11 +102,8 @@ div#info-section-subsection {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: var(--green-blue-crayola);
-    border-top: 1mm solid var(--blue-violet-color-wheel);
-    border-bottom: 1mm solid var(--blue-violet-color-wheel);
-    color: var(--aero-blue);
-    margin: 10px 0;
+    padding: 5px;
+    color: white;
 }
 
 #places-to-visit-container {
